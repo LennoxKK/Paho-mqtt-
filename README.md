@@ -46,3 +46,32 @@ Mysql - Secure compared to other DBMS, (Database Management Systems)
 3. [Mysql-connector-python](https://www.geeksforgeeks.org/how-to-connect-python-with-sql-database/)
 ### Version Control:
 [Git](https://github.com/LennoxKK/Paho-mqtt-/)
+
+
+### SQL DATABASE VIDEO
+
+
+https://github.com/LennoxKK/Paho-mqtt-/assets/72440905/04bfd62d-4ef3-4aa2-be7b-df64c1a98554
+
+### MQTT - SQL VIDEO
+
+https://github.com/LennoxKK/Paho-mqtt-/assets/72440905/91745f89-c5f6-47b9-8feb-ebaf837e0044
+
+### MYSQL - AFTER ADDING THE TOPIC : "test\client_w"
+
+https://github.com/LennoxKK/Paho-mqtt-/assets/72440905/3179ee54-fe4e-49d8-92b1-daaeea048ad4
+
+### FILES USED
+-- Main files
+1. pub.py - publisher
+2. sub.py - subscriber
+3. mysql_connector.py - connects python to mysql - server
+
+-- Auxiliary files
+
+1. connect.py - makes it possible to choose between publishing or subscribing
+2. livestream.py - queries data from database and display it in real time.
+3. choice.sh - Choosing between subscribing and pub;lishing.
+   
+
+
