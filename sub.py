@@ -1,18 +1,24 @@
-# python3.6
+
 
 import random
+
+#sql imports
 from mysql_connector import db,cursor
+
+#mqtt imports
 from paho.mqtt import client as mqtt_client
 
 
 broker = 'localhost'
 port = 1883
-topic = "test/client_a"
+print('\n\n')
+topic = input("Enter the topic : ")
+#"test/client_b"
+print('\n')
 # Generate a Client ID with the subscribe prefix.
 client_id = f'subscribe-{random.randint(0, 100)}'
 # username = 'emqx'
 # password = 'public'
-
 
 def connect_mqtt() -> mqtt_client:
     def on_connect(client, userdata, flags, rc):
@@ -33,7 +39,8 @@ def subscribe(client: mqtt_client):
         try:
             message = msg.payload.decode("utf-8")
             topic = msg.topic
-            querry = f"INSERT INTO pub_sub_msg (topic,message)  values (%s,%s)"
+            
+            querry = f"INSERT IGNORE INTO pub_sub_msg (topic,message)  values (%s,%s)"
             cursor.execute(querry,[topic,message])
             db.commit()
          
