@@ -32,7 +32,7 @@ The Paho Python Client provides a client class with support for MQTT v5.0, MQTT 
     db = sql.connect(
     host="localhost",
     user="root",
-    password="LennoxEKK99",
+    password="XXXXXXXX",
     database="mqtt_sql"
     )
     ```
@@ -71,7 +71,7 @@ https://github.com/LennoxKK/Paho-mqtt-/assets/72440905/3179ee54-fe4e-49d8-92b1-d
 
 1. connect.py - makes it possible to choose between publishing or subscribing
 2. livestream.py - queries data from database and display it in real time.
-3. choice.sh - Choosing between subscribing and pub;lishing.
+3. choice.sh - Choosing between subscribing and publishing.
    
 
 
